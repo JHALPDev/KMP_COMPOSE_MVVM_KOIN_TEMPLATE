@@ -1,6 +1,4 @@
-package com.jhalpdev.kmpcomposetemplate
-
-import com.jhalpdev.kmpcomposetemplate.repositories.getPlatform
+package com.jhalpdev.kmpcomposetemplate.repositories
 
 class Greeting {
     private val platform = getPlatform()
