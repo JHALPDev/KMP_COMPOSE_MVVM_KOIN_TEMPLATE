@@ -1,4 +1,4 @@
-package com.jhalpdev.kmpcomposetemplate
+package com.jhalpdev.kmpcomposetemplate.repositories
 
 class JVMPlatform: Platform {
     override val name: String = "Java ${System.getProperty("java.version")}"

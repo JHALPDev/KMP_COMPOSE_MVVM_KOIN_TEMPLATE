@@ -1,4 +1,4 @@
-package com.jhalpdev.kmpcomposetemplate
+package com.jhalpdev.kmpcomposetemplate.repositories
 
 import android.os.Build
 
