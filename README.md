@@ -1,4 +1,4 @@
-# KMP_COMPOSE_TEMPLATE
+# KMP_COMPOSE_MVVM_KOIN_TEMPLATE
 
 This is a basic template for projects that will target iOS, Android, and Desktop platforms. The project implements the classic MVVM architecture (Model-View-ViewModel) and uses Koin for dependency injection. It is designed to help developers kickstart their multiplatform projects using Kotlin Multiplatform and Jetpack Compose.
 
