@@ -13,13 +13,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.jhalpdev.kmpcomposetemplate.repositories.Greeting
+import com.jhalpdev.kmpcomposetemplate.repositories.GreetingRepository
 import kmpcomposetemplate.composeapp.generated.resources.Res
 import kmpcomposetemplate.composeapp.generated.resources.compose_multiplatform
 import org.jetbrains.compose.resources.painterResource
 
 @Composable
-fun MainScreen() {
+fun MainScreen(state: MainScreenState) {
     var showContent by remember { mutableStateOf(false) }
 
     Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
@@ -27,10 +27,9 @@ fun MainScreen() {
             Text("Click me!")
         }
         AnimatedVisibility(showContent) {
-            val greeting = remember { Greeting().greet() }
             Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
                 Image(painterResource(Res.drawable.compose_multiplatform), null)
-                Text("Compose: $greeting")
+                Text("Compose: ${state.greeting}")
             }
         }
     }

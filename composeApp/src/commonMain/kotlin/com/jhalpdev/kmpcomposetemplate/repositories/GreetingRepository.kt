@@ -1,6 +1,6 @@
 package com.jhalpdev.kmpcomposetemplate.repositories
 
-class Greeting {
+class GreetingRepository {
     private val platform = getPlatform()
 
     fun greet(): String {
