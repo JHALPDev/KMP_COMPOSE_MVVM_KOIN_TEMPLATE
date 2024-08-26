@@ -34,6 +34,9 @@ kotlin {
         val desktopMain by getting
         
         androidMain.dependencies {
+
+            implementation(libs.koin.androidx.compose)
+
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
         }
@@ -46,6 +49,10 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+
+            implementation(libs.koin.core)
+            implementation(libs.koin.compose)
+            implementation(libs.koin.compose.viewmodel)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
