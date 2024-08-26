@@ -1,3 +1,8 @@
+# KMP_COMPOSE_TEMPLATE
+
+This is a basic template for projects that will target iOS, Android, and Desktop platforms. The project implements the classic MVVM architecture (Model-View-ViewModel) and uses Koin for dependency injection. It is designed to help developers kickstart their multiplatform projects using Kotlin Multiplatform and Jetpack Compose.
+
+
 This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
