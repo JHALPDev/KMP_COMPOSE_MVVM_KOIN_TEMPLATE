@@ -8,14 +8,16 @@ import com.jhalpdev.kmpcomposetemplate.repositories.GreetingRepository
 import com.jhalpdev.kmpcomposetemplate.ui.MainScreen
 import com.jhalpdev.kmpcomposetemplate.ui.MainViewModel
 import org.jetbrains.compose.ui.tooling.preview.Preview
+import org.koin.compose.KoinContext
 
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    KoinContext {
         val repository = GreetingRepository()
         val viewModel = MainViewModel(repository)
         val state by viewModel.state.collectAsState()
         MainScreen(state)
     }
+
 }
